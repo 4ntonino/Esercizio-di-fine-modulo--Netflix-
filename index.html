@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body >
+    
+    <!-- NAVBAR  -->
+    
+<header class="p-4 pb-0 " >
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/215e906bca633916a4fc19b7197fb28c.png" alt="Logo Netflix">
+          </a>
+          <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My list</a>
+              </li>
+             </ul>
+             
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search icon" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> 
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">KIDS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bell-fill icon" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                        </svg>
+                    </a>
+                </li>
+                </ul>
+                <ul class="navbar-nav">
+                <li class="nav-item">
+
+
+    <!-- Account Kids Tendina -->  
+
+                    <div class="btn-group ">
+                        <button type="button" class="btn dropdown-toggle text-secondary border-0"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/kids.png" id="user" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark ">
+                            
+                            <li><a class="dropdown-item" href="#">Modifica profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Account</a></li>
+                            <li><a class="dropdown-item" href="#">Aiuto</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="logOut.html">Log Out</a></li>  <!-- TO DO : creare pagina di logOut -->
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+
+
+
+
+    <!-- Main -->
+
+    
+<main class="text-white p-4 pt-1 " id="carosello" >
+
+<div   class="container-fluid ">
+    <div   class="row mt-2  ">
+        <section   class="d-flex">
+            <h1>TV Shows</h1>
+            
+         
+              <button type="button" class="btn dropdown-toggle border-white text-white ms-4 genres-button"  data-bs-toggle="dropdown" aria-expanded="false"> Genres        
+              </button>
+
+              <!-- ICONE -->
+              <div id="ico1"> <img  src="./assets/icons8-border-32 (1).png"  alt=""><img  src="./assets/icons8-border-32 (1).png"  alt="">
+              
+        </section>
+       
+    </div> 
+
+    <!--  Carosello 1-->
+
+    <div class="row ">  <!-- TEST SCROLL -->
+        <h4 class="mt-4 ">Trending Now</h4>
+        <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+           
+           
+             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+ 
+
+            <div class="carousel-inner  " >
+
+             
+              <div class="carousel-item active overflow-hidden flex-nowrap "> 
+  
+               <!--FILM 1-->
+
+               <section class="d-flex mb-3  ">
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-2 " >
+                    <img src="./assets/movies/1.png" class="card-img-top img-fluid " alt="Unortodox">
+                </div>
+
+                <!--FILM 2-->
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                    <img src="./assets/movies/2.png" class="card-img-top img-fluid" alt="Afterlife">
+                </div>
+
+                <!--FILM 3 -->
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                    <img src="./assets/movies/3.png" class="card-img-top img-fluid" alt="Vis a Vis">
+                </div>
+
+                <!--FILM 4-->
+
+                 <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                    <img src="./assets/movies/4.png" class="card-img-top img-fluid" alt="The place">
+                </div>
+                  
+                <!--FILM 5-->      
+
+                 <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                    <img src="./assets/movies/5.png" class="card-img-top img-fluid" alt="Summertime">
+                </div>
+                  
+                <!--FILM 6-->   
+
+                <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                    <img src="./assets/movies/6.png" class="card-img-top img-fluid" alt="i delitti di Valahlla">
+                </div>
+
+                <!--FILM 7-->   
+
+                 <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                    <img src="./assets/movies/6.png" class="card-img-top img-fluid" alt="i delitti di Valahlla">
+                </div>
+
+
+                
+                
+                 </section>
+              </div>
+
+        <!--SECONDA PAGINA-->
+
+        <div class="carousel-item active"> 
+
+            <!--FILM 1-->
+
+            <section class="d-flex mb-3  ">
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                 <img src="./assets/movies/6.png" class="card-img-top img-fluid " alt="Unortodox">
+             </div>
+
+            <!--FILM 2-->   
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                 <img src="./assets/movies/5.png" class="card-img-top img-fluid" alt="Afterlife">
+             </div>
+
+            <!--FILM 3-->
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                 <img src="./assets/movies/4.png" class="card-img-top img-fluid" alt="Vis a Vis">
+             </div>
+
+            <!--FILM 4-->
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                 <img src="./assets/movies/3.png" class="card-img-top img-fluid" alt="The place">
+             </div>
+               
+            <!--FILM 5-->   
+
+              <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                 <img src="./assets/movies/2.png" class="card-img-top img-fluid" alt="Summertime">
+             </div>
+               
+            <!--FILM 6-->   
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                 <img src="./assets/movies/1.png" class="card-img-top img-fluid" alt="i delitti di Valahlla">
+             </div>
+
+            <!--FILM 7-->    
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-2" >
+                    <img src="./assets/movies/1.png" class="card-img-top img-fluid" alt="i delitti di Valahlla">
+            </div>
+             
+              </section>
+           </div>
+        
+          </div>             
+        </div>
+    </div>
+</div> 
+
+<!--  Carosello 2-->
+
+<div class="row" > <!-- TEST SCROLL -->
+    <h4 class="mt-4 ">Watch it again</h4>
+    <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+       
+       
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+
+
+        <div class="carousel-inner  " >
+
+          <!--PRIMA PAGINA -->
+
+          <div class="carousel-item active"> 
+
+            <!-- FILM 1-->
+
+           <section class="d-flex mb-3  ">
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/7.png" class="card-img-top img-fluid " alt="L'altra gerace">
+            </div>
+
+            <!-- FILM 2-->   
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/8.png" class="card-img-top img-fluid" alt="Virgin River">
+            </div>
+
+            <!-- FILM 3-->
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/9.png" class="card-img-top img-fluid" alt="English Game">
+            </div>
+
+           <!-- FILM 4-->
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/10.png" class="card-img-top img-fluid" alt="Il metodo Kominsky">
+            </div>
+              
+            <!-- FILM 5--> 
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/11.png" class="card-img-top img-fluid" alt="Patto d'amore">
+            </div>
+              
+             
+            <!-- FILM 6-->   
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/12.png" class="card-img-top img-fluid" alt="la casa delas flores">
+            </div>
+
+            
+            
+             </section>
+          </div>
+
+        <!-- SECONDA PAGINA  -->     <!-- TO DO: MODIFICARE GLI "ALT" -->
+    <div class="carousel-item active"> 
+
+    
+        <section class="d-flex mb-3  ">
+
+        <!-- FILM 1-->
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/12.png" class="card-img-top img-fluid " alt="Unortodox">
+         </div>
+
+         <!-- FILM 2-->  
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/11.png" class="card-img-top img-fluid" alt="Afterlife">
+         </div>
+
+         <!-- FILM 3-->
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/10.png" class="card-img-top img-fluid" alt="Vis a Vis">
+         </div>
+
+        <!-- FILM 4-->
+
+          <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/9.png" class="card-img-top img-fluid" alt="The place">
+         </div>
+           
+        <!-- FILM 5-->   
+
+          <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/8.png" class="card-img-top img-fluid" alt="Summertime">
+         </div>
+           
+        
+        <!-- FILM 6-->   
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/7.png" class="card-img-top img-fluid" alt="i delitti di Valahlla">
+         </div>
+          </section>
+       </div>
+      </div>             
+</div>
+</div>
+</div> 
+
+<!-- CAROSELLO 3  -->
+
+<div class="row">
+    <h4 class="mt-4 ">New releases</h4>
+    <div id="carouselExampleAutoplaying3" class="carousel slide" data-bs-ride="carousel">
+       
+       
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+
+
+        <div class="carousel-inner " >
+
+        <!-- PRIMA PAGINA -->
+
+
+          <div class="carousel-item active"> 
+         
+           <section class="d-flex mb-3  ">
+
+            
+            <!-- FILM 1-->
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/13.png" class="card-img-top img-fluid " alt="Collateral Beauty">
+            </div>
+
+            <!-- FILM 2-->       
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/14.png" class="card-img-top img-fluid" alt="Self Made">
+            </div>
+
+            <!-- FILM 3-->
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/15.png" class="card-img-top img-fluid" alt="Freud">
+            </div>
+
+            <!-- FILM 4 -->
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/16.png" class="card-img-top img-fluid" alt="Grace and Frankie">
+            </div>
+              
+             <!-- FILM 5-->
+
+             <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/17.png" class="card-img-top img-fluid" alt="Lasciati Andare">
+            </div>
+              
+            <!-- FILM 6--> 
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+                <img src="./assets/movies/18.png" class="card-img-top img-fluid" alt="Dogman">
+            </div>
+            
+             </section>
+          </div>
+
+    <!-- PAGINA 2 -->     <!-- to do: MODIFICARE GLI ALT -->
+
+
+    <div class="carousel-item active"> 
+       
+        <section class="d-flex mb-3  ">
+
+        <!-- FILM 1-->
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/6.png" class="card-img-top img-fluid " alt="Unortodox">
+         </div>
+
+         <!-- FILM 2-->
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/5.png" class="card-img-top img-fluid" alt="Afterlife">
+         </div>
+
+         <!-- FILM 3-->
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/4.png" class="card-img-top img-fluid" alt="Vis a Vis">
+         </div>
+
+         <!-- FILM 4-->
+
+          <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/3.png" class="card-img-top img-fluid" alt="The place">
+         </div>
+           
+         <!-- FILM 5 -->        
+
+          <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/2.png" class="card-img-top img-fluid" alt="Summertime">
+         </div>
+           
+        <!-- FILM 6-->  
+
+         <div class="card col-12 col-sm-6 col-md-4 col-lg" >
+             <img src="./assets/movies/1.png" class="card-img-top img-fluid" alt="i delitti di Valahlla">
+         </div>
+          </section>
+       </div>
+   
+      </div>             
+    </div>
+    </div>
+</div> 
+</main>
+
+<!-- FOOTER -->
+
+<footer class="">
+<div class="container ">
+    <div class="row mb-0 ">
+
+        <!-- LOGHI SOCIAL  -->
+
+        <section class="social-icon  ms-5 ">
+            <div class="social text-secondary">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+        </section>
+    </div>
+    <div class="row text-secondary ps-5 pe-5 ">
+        <div class="col-md-3  "> 
+           
+                    <!-- AUDIO AND SUBTITLES,MEDIA CENTER... -->
+
+                <a class="nav-link active a" aria-current="page" href="#">Audio and Subtitles</a>
+                <a class="nav-link a" href="#">Media Center</a>
+                <a class="nav-link a" href="#">Privacy</a>
+                <a class="nav-link a" href="#" >Contact Us</a>
+                <button type="button" class="btn btn-outline-secondary mt-3 footer-button">Secondary</button>
+
+
+
+
+                
+                  </div>
+
+        <div class="col-md-3 me-0 ">
+
+                        <!-- AUDIO DESCRIPTION,INVESTOR....-->
+
+                    <a class="nav-link active a" aria-current="page" href="#">Audio Description</a>
+                    <a class="nav-link a" href="#">Investor Relations</a>
+                    
+                    <a class="nav-link disabled a" aria-disabled="true">Legal Notices</a>
+                      </div>
+
+         <div class="col-md-3 "> 
+
+                        <!-- HELP CENTER,JOBS... -->
+
+                        <a class="nav-link active a " aria-current="page" href="#">Help center</a>
+                        <a class="nav-link a" href="#">Jobs</a>
+                        
+                        <a class="nav-link disabled a" aria-disabled="true">Cookie Preferences</a>
+                          </div>
+
+         <div class="col-md-3"> 
+
+                        <!-- GIFT CARDS,THERMS OF USE... -->
+           
+                            <a class="nav-link active a" aria-current="page" href="#">Gift Cards</a>
+                            <a class="nav-link a" href="#">Terms of use</a>
+                            <a class="nav-link disabled a" aria-disabled="true">Corporate information</a>
+                              </div>
+    </div>
+
+                        <!-- COPYRIGHT -->
+
+    <div class="row ps-5 pt-2">
+        <span class="text-secondary a">© 1997-2019 Netflix,Inc.{i-0d00fcda2fdf9c0de}</span>
+    </div>
+</div>
+</footer >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+</body>
+</html>

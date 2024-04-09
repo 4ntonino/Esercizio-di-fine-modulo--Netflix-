@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#000000 ;
+  
+}
+header img{
+    width: 100px;
+   
+}
+
+nav a{
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #ff0000 !important;
+}
+.card{
+	border-radius: 0;
+}
+
+
+#user{
+width: 30px;
+}
+.dropdown-menu {
+    margin-left: -100px;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .genres-button{
+    background-color: #000000;
+
+  }
+  .card {
+    background-color: #333;
+    transition: transform 0.2s;
+   
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+
+}
+
+
+
+.card img:hover{
+    filter: brightness(110%);
+} 
+
+.a{
+    font-size: 12px;
+}
+
+#ico1{
+   
+    position: absolute;
+    right: 60px;
+
+}
+
+
+.hidden {
+    display: none;
+}
